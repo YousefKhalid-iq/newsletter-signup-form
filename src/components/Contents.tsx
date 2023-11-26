@@ -9,15 +9,18 @@ const Contents = ({ formData, setFormData, setMsg, errors, handleSubmit }) => {
         <h1 className="text-[2.25em] tablet:text-[2.75em] pc:text-[3.5em] font-[700] text-charcoalGrey mobile:mt-6 tablet:mt-0">Stay updated!</h1>
         <p className="text-darkGrey">Join 60,000+ product managers receiving monthly updates on:</p>
         <div className="flex space-x-4">
-          <img className=" tablet:mt-3" src="./assets/images/icon-list.svg" />
+          <img className=" tablet:mt-3" src="https://raw.githubusercontent.com/YousefKhalid-iq/newsletter-signup-form/main/assets/images/icon-list.svg" />
           <p className="text-darkGrey pt-3"> Product discovery and building what matters</p>
         </div>
         <div className="flex space-x-4">
-          <img className=" tablet:mt-3" src="./assets/images/icon-list.svg" />
+          <img className=" tablet:mt-3" src="https://raw.githubusercontent.com/YousefKhalid-iq/newsletter-signup-form/main/assets/images/icon-list.svg" />
           <p className="text-darkGrey pt-3"> Measuring to ensure updates are a success</p>
         </div>
         <div className="flex space-x-4">
-          <img className=" mt-2 tablet:mt-6 pc:mt-3" src="./assets/images/icon-list.svg" />
+          <img
+            className=" mt-2 tablet:mt-6 pc:mt-3"
+            src="https://raw.githubusercontent.com/YousefKhalid-iq/newsletter-signup-form/main/assets/images/icon-list.svg"
+          />
           <p className="text-darkGrey pt-3 tablet:pt-6 pc:pt-3"> And much more!</p>
         </div>
         <Form formData={formData} setFormData={setFormData} setMsg={setMsg} errors={errors} handleSubmit={handleSubmit} />
