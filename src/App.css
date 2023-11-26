@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.noError {
+  padding: 0.75rem;
+  padding-left: 1.5rem;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border-color: hsl(231 7% 60%);
+  transition: all 0.4s ease;
+}
+
+.noError::placeholder {
+  color: hsl(231 7% 60%);
+}
+
+.noError:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: hsl(234 29% 20%);
+}
+
+.error {
+  border-color: hsl(4, 100%, 67%);
+  background-color: hsl(4, 100%, 95%);
+  padding: 0.75rem;
+  padding-left: 1.5rem;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: hsl(4, 100%, 67%);
+  transition: all 0.4s ease;
+}
+
+.error::placeholder {
+  color: hsl(4, 100%, 67%);
+}
+
+.error:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: hsl(4, 100%, 67%);
+}
+
+.main-btn {
+  background-color: hsl(234 29% 20%);
+  color: hsl(0 0% 100%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-btn:hover {
+  background-image: linear-gradient(to right, #e64e71, #e7585e, #e7633e)
+}
+
+.thankyou-cont-on {
+  display: grid;
+  grid-template-areas: "."
+  "icon"
+  "header"
+  "paragraph"
+  "."
+  "button";
+  grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr;
+  font-family: Roboto, sans-serif;
+  background-color: hsl(0 0% 100%)
+}
+
+@media only screen and (min-width: 1024px) {
+  .thankyou-cont-on {
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .thankyou-cont-on {
+    height: 500px;
+    width: 500px;
+    padding: 40px;
+  }
+}
+
+.icon {
+  grid-area: icon;
+}
+
+.thankyou-header {
+  grid-area: header;
+}
+
+.thankyou-para {
+  grid-area: paragraph;
+}
+
+.dismiss-btn {
+  grid-area: button;
+}
